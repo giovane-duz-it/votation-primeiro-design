@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.metallica{
+    background-image: url('img/easteregg-background.png');
+    background-color:rgb(77, 2, 77);
+    background-blend-mode: multiply;
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+.navbar {
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    background-color: rgb(39, 39, 39);
+    color: #333;
+    padding: 0 1rem;
+    margin-top: -2vh;
+}
+.brand-title {
+    font-size: 1.5rem;
+    margin: 0.8rem;
+    cursor: pointer;
+}
+
+.brand-title img {
+    width: 150px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li:hover {
+    background-color: #26052b09;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    -webkit-text-stroke-width: 0.9px;
+  -webkit-text-stroke-color: black;
+    padding: 1rem;
+    display: block;
+  
+}
+.pizza {
+    text-decoration: none;
+    color: #333;
+    padding: 1rem;
+    display: block;
+    background-image: url('img/easteregg-img-slice.gif');
+    background-repeat: no-repeat;
+    background-size:contain; 
+    background-position: center;
+    transition: background 0.3s;
+}
+.pizza:hover{
+    background-image: url('img/easteregg-gif-slice.gif');
+}
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.alaison {
+    font-size: 1.5rem;
+    left: 40%;
+    margin-top: -12vh;
+}
+
+@media (max-width: 375px) {
+    .brand-title img {
+        width: 125px;
+    }
+
+    .navbar {
+        margin-top: 0;
+    }
+
+    .banner {
+        height: 375px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .brand-title img {
+        width: 125px;
+    }
+}
+
+@media (max-width: 1800px) {
+    .brand-title img {
+        width: 125px;
+    }
+}
+
+@media (max-width: 768px) {
+    .brand-title img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 425px) {
+    .brand-title img {
+        width: 100px;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+.gustavao {
+    color: #333;
+    background-image: none;
+    background-color: #71f449;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.gustavao:hover {
+    background-color: white;
+    color: black;
+}
+
+.icecube {
+    width: 100%;
+    height: 1vh;
+}
+
+.alaison {
+    background-color: #71f449;
+    color: #fff;
+    padding: 35px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background 0.3s;
+    position: sticky;
+    margin-top: -5%;
+    left: 42%;
+}
+
+.alaison:hover {
+    background-color: #fff;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .alaison {
+        font-size: 2rem;
+        padding: 8px;
+        left: 40%;
+    }
+}
+
+@media (max-width: 450px) {
+    .alaison {
+        font-size: 1.5rem;
+        padding: 6px;
+        left: 25%;
+    }
+}
+
+.nwa {
+    display: none;
+}
+
+.nwa {
+    width: 100%;
+    height: 10vh;
+}
+
+.modal{
+    border: none;
+    border-radius: 0%; 
+    border-color: transparent;
+    background-color: transparent;
+    --bs-modal-bg: transparent;
+    --bs-modal-border-color: transparent;
+ }

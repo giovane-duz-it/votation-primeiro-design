@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.navbar {
+    font-size: 1.2em;
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    background-color: rgb(241, 240, 238);
+    color: #333;
+    padding: 0 1rem;
+    margin-top: -2vh;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: 0.8rem;
+    cursor: pointer;
+}
+
+.brand-title img {
+    width: 150px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-end; 
+}
+
+.navbar-links li {
+    list-style: none;
+    
+}
+
+.navbar-links li:hover {
+    background-color: #ffffff;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #333;
+    padding: 1rem;
+    display: block;
+}
+
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.alaison {
+    font-size: 1.5rem;
+    left: 40%;
+    margin-top: -12vh;
+}
+.modal{
+   border: none;
+   border-radius: 0%; 
+   border-color: transparent;
+   background-color: transparent;
+   --bs-modal-bg: transparent;
+   --bs-modal-border-color: transparent;
+}
+@media (max-width: 375px) {
+    .brand-title img {
+        width: 125px;
+    }
+ 
+    .navbar-links ul {
+        display:initial;}
+    .navbar {
+        margin-top: 0;
+    }
+
+    .banner {
+        height: 375px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .brand-title img {
+        width: 125px;
+    }
+}
+
+@media (max-width: 1800px) {
+    .brand-title img {
+        width: 125px;
+    }
+}
+@media (min-width: 1300px) {
+    .carousel-inner{
+        height: 66vh;
+   }
+}
+
+
+@media (max-width: 768px) {
+    .brand-title img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 425px) {
+    .brand-title img {
+        width: 100px;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;   
+        text-align: center;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+            display:initial;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+.navbar-links li .gustavao {
+    align-self: center; 
+    margin-bottom: -1rem; 
+}
+.gustavao {
+    color: #fff;
+    background-color: #496FF4;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 0;
+   
+}
+
+.gustavao:hover {
+    background-color: white;
+    color: black;
+}
+
+.icecube {
+    width: 100%;
+    height: 1vh;
+}
+
+.alaison {
+    background-color: #496FF4;
+    color: #fff;
+    padding: 35px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background 0.3s;
+    position: sticky;
+    margin-top: -5%;
+    left: 42%;
+}
+
+.alaison:hover {
+    background-color: #fff;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .alaison {
+        font-size: 2rem;
+        padding: 8px;
+        left: 40%;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .alaison {
+        font-size: 1.5rem;
+        padding: 6px;
+        left: 25%;
+        
+
+    }
+    
+}
+
+.nwa {
+    display: none;
+
+}
+
+.nwa {
+    width: 100%;
+    height: 10vh;
+}
+@media (min-width: 2300px) {
+    .carousel-inner{
+        height: 72vh;
+   }
+   .alaison{
+    left: 45%;
+   }
+}
+@font-face {
+font-family: "Rapaize";
+src: url(Pizza.ttf)
+}
+.entrar{
+    color: #fff;
+    background-color: #496FF4;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 0;
+}
+.entrar:hover{
+    background-color: #fff;
+    color:#333;
+}
