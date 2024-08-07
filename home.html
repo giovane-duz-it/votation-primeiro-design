@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="css/img/icon-logo.png" type="image/png">
+    <title>ClickVote</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        function cuscuz() {
+            window.location.href = "index.html";
+        }
+    </script>
+    <nav class="navbar">
+        <div class="brand-title"><img src="css/img/icon-ezgif.com-resize.png" alt="" onclick="cuscuz()"
+                style="cursor: pointer;"></div>
+
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobrenos.html">Sobre nós</a></li>
+                <li><a href="cadastro.html" data-bs-toggle="modal" data-bs-target="#exampleModal">Cadastre-se</a></li>
+                <li><a href="#"><input type="button" value="Entrar" class="gustavao" data-bs-toggle="modal" data-bs-target="#LoginModal"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButton = document.querySelector('.toggle-button');
+            const navbarLinks = document.querySelector('.navbar-links');
+
+            toggleButton.addEventListener('click', function () {
+                navbarLinks.classList.toggle('active');
+            });
+        });
+    </script>
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="css/img/bannerhome.jfif"
+                    class="d-block w-100" alt="https://s3-alpha-sig.figma.com/img/a742/3a67/83114b5978242c52a5754c7f6a6c81da?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gXrl-hSdM5EbUecdBWFH71o0krDb-e8XLRvkat8A3XzpwhYywiYxvsLJP~IwJUcpmJHsasHu~fjMpH0HT6du4Lm0sce7wQt1dxMwHRfybQySVsxieD23QJkGGbp9eEgf3V7lIKnjcXLhp8omvcMT11n7SST-hoOlaWdH~gntiSt5b9dqGCcnA~WIDF~ju9ianG8pwzJLbeVRR451Kj4AIRru~kIQvkn-Q1bBfbyymqNByOuwRfxU-2ObgI0OuJmqJKBUkVo6QoX7jMUP4lWxjIHIDeCIY2R1Xfo~Lib1CoG5cSscbTI5oQuTvyFwLp8MPilhw7kGWA7jznHCmnwCZw__">
+            </div>
+        </div>
+    </div>
+    <div class="nwa"></div>
+    <a href="#"><input type="button" value="Acesse grátis" class="alaison" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+
+    </div>
+    <div class="nwa"></div>
+    <h1 style="font-family: 'Montserrat', sans-serif;;">
+        Sobre o projeto
+    </h1>
+    <p style="font-family: 'Montserrat', sans-serif; margin-left: 1.2rem; font-size: 1.2rem;">Imagine um site onde você pode criar
+        votações sobre qualquer
+        assunto que desejar, de maneira fácil e rápida. Com
+        apenas alguns cliques, você pode elaborar perguntas, definir opções de resposta e personalizar o design para que
+        fique conforme sua preferência. Este site de criação de votações não apenas simplifica o processo de coletar
+        opiniões e decisões, mas também oferece uma plataforma interativa onde os participantes podem expressar suas
+        escolhas de forma clara e organizada. Seja para decidir sobre o próximo destino de uma viagem em grupo, escolher
+        o nome de um novo produto ou simplesmente captar a opinião de seus colegas, este site é a ferramenta ideal para
+        transformar ideias em decisões concretas.</p>
+
+    <p style="font-family: 'Montserrat', sans-serif; margin-left: 1.2rem; font-size: 1.2rem;">Além disso, nossa plataforma oferece
+        segurança e confiabilidade, garantindo que os resultados sejam precisos e
+        protegidos. Desde pequenos grupos até grandes organizações, todos podem se beneficiar da praticidade e
+        eficiência de nossa ferramentas.
+        Então, se você busca simplicidade, transparência e eficácia na tomada de decisões, experimente nosso site de
+        criação de votações e transforme ideias em ações com apenas alguns cliques.
+    </p>
+    <p style="font-family: 'Montserrat', sans-serif; margin-left: 1.2rem; font-size: 1.2rem;">Junte-se a nós e veja como é fácil
+        criar um futuro decidido por todos.</p>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <center>
+                        <form action="index.html" class="was-validated">
+                                <div class="card border-0" style="width: 100%; background-color: black;border-radius:40px; border-color: transparent;">
+                                    <div class="card-body" style="border-color: transparent;border-radius:40px;">
+                                        <h1 class="card-title" style="color: white; font-family:'Montserrat', sans-serif;">Cadastrar conta</h1>
+                                        <hr style="height:3px; color: white;">
+                                    </div>
+                                    <ul class="list-group list-group-flush border-0">
+                                        <p class="card-text border-0" style="color: white; margin-left: 1vh;font-family:'Montserrat', sans-serif;">Nome</p>
+                                        <li class="list-group-item border-0" style="background-color:black; margin-left: 1vh;">
+                                            <input type="text" placeholder="" id="uname" class="form-control" name="uname" required>
+                                            <div class="valid-feedback" style="font-family:'Montserrat', sans-serif;">Nome válido</div>
+                                            <div class="invalid-feedback" style="font-family:'Montserrat', sans-serif;">Por favor preencha este campo</div>
+                                        </li>
+                                        <p class="card-text" style="color: white;margin-left: 1vh;font-family:'Montserrat', sans-serif;">E-mail</p>
+                                        <li class="list-group-item border-0" style="background-color:black; margin-left: 1vh;">
+                                            <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" required>
+                                            <div class="invalid-feedback" style="font-family:'Montserrat', sans-serif;">Email inválido</div>
+                                            <div class="valid-feedback" style="font-family:'Montserrat', sans-serif;">Email válido</div>
+                                        </li>
+                                        <p class="card-text" style="color: white; margin-left: 1vh;font-family:'Montserrat', sans-serif;">Senha</p>
+                                        <li class="list-group-item border-0" style="background-color:black; margin-left: 1vh;">
+                                            <input type="password" class="form-control" name="password" id="password" required>
+                                            <div class="valid-feedback" style="font-family:'Montserrat', sans-serif;">Senha válida</div>
+                                            <div class="invalid-feedback" style="font-family:'Montserrat', sans-serif;">Por favor preencha este campo</div>
+                                        </li>
+                                        <p class="card-text" style="color: white;margin-left: 1vh;font-family:'Montserrat', sans-serif;">Gênero</p>
+                                        <li class="list-group-item border-0" style="background-color:black; margin-left: 1vh;">
+                                            <select class="form-select" id="gender" name="gender" required>
+                                                <option value="" disabled selected>Selecione seu gênero</option>
+                                                <option value="male" style="font-family:'Montserrat', sans-serif;">Masculino</option>
+                                                <option value="female" style="font-family:'Montserrat', sans-serif;">Feminino</option>
+                                            </select>
+                                            <div class="invalid-feedback" style="font-family:'Montserrat', sans-serif;">Por favor selecione uma opção</div>
+                                            <div class="valid-feedback" style="font-family:'Montserrat', sans-serif;">Gênero válido</div>
+                                        </li>
+                                        <p class="card-text" style="color: white;margin-left: 1vh;font-family:'Montserrat', sans-serif;">Data de Nascimento</p>
+                                        <li class="list-group-item border-0" style="background-color:black; margin-left: 1vh;">
+                                            <input type="date" class="form-control" id="dob" name="dob" required>
+                                            <div class="invalid-feedback" style="font-family:'Montserrat', sans-serif;">Por favor preencha este campo</div>
+                                            <div class="valid-feedback" style="font-family:'Montserrat', sans-serif;">Data válida</div>
+                                        </li>
+                                        <p class="card-text" style="font-family:'Montserrat', sans-serif;">Já tem uma conta? <a href="login.html" class="card-link"data-bs-toggle="modal" data-bs-target="#LoginModal" style="font-family:'Montserrat', sans-serif;">Fazer login</a></p>
+                                    </ul>
+                                    <div class="card-body">
+                                        <a href="#"><input type="button" value="Cadastrar" class="btn btn-outline-light" style="font-family: 'Montserrat', sans-serif;" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </center>
+            </div>
+       
+
+
+
+
+
+
+
+
+            <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <center>
+                                <form action="index.html" class="was-validated">
+                                        <div class="card border-0" style="width: 100%; background-color: black;border-radius:40px; border-color: transparent;">
+                                            <div class="card-body" style="border-color: transparent;border-radius:40px;">
+                                                <h1 class="card-title" style="color: white;font-family:'Montserrat', sans-serif;">Fazer login</h1>
+                                                <hr style="height:3px; color: white;">
+                                            </div>
+                                            <ul class="list-group list-group-flush border-0">
+                                                <p class="card-text" style="color: white;margin-left: 1vh;font-family:'Montserrat', sans-serif;">E-mail</p>
+                                                <li class="list-group-item border-0" style="background-color:black; margin-left: 1vh;">
+                                                    <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" required>
+                                                    <div class="invalid-feedback" style="font-family:'Montserrat', sans-serif;">Email inválido</div>
+                                                    <div class="valid-feedback" style="font-family:'Montserrat', sans-serif;">Email válido</div>
+                                                </li>
+                                                <p class="card-text" style="color: white; margin-left: 1vh;font-family:'Montserrat', sans-serif;">Senha</p>
+                                                <li class="list-group-item border-0" style="background-color:black; margin-left: 1vh;">
+                                                    <input type="password" class="form-control" name="password" id="password" required>
+                                                    <div class="valid-feedback" style="font-family:'Montserrat', sans-serif;">Senha válida</div>
+                                                    <div class="invalid-feedback" style="font-family:'Montserrat', sans-serif;">Por favor preencha este campo</div>
+                                                </li>
+                                                <p class="card-text" style="font-family:'Montserrat', sans-serif;">Não tem uma conta? <a href="login.html" class="card-link" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-family:'Montserrat', sans-serif;">crie uma agora mesmo</a></p>
+                                            </ul>
+                                            <div class="card-body">
+                                                <a href="#"><input type="button" value="Login" class="btn btn-outline-light" style="font-family: 'Montserrat', sans-serif;" data-bs-toggle="modal" data-bs-target="#LoginModal"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </center>
+                    </div>
+
+
+
+                    <footer style="background-color: black; font-family: 'Montserrat', sans-serif; bottom: 0;">
+                        <center>
+                            <h4 style="color: white;">
+                                Participantes;
+                            </h4>
+                            <p style="color: white;">
+                                Allyson, Kauã, Giovane, Gustavo
+                            </p>
+                        </center>
+                    </footer>
+</body>
+
+</html>

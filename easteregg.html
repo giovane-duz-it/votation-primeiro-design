@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="css/img/easteregg-icon.png" type="image/png">
+    <link rel="stylesheet" href="css/easteregg.css">
+    <title>TurtleVote</title>
+</head>
+
+<body>
+    <div class="metallica">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script>
+            function cuscuz() {
+                window.location.href = "index.html";
+            }
+        </script>
+        <nav class="navbar">
+            <div class="brand-title"><img src="css/img/easteregg-icon.png" alt="" onclick="cuscuz()"
+                    style="cursor: pointer;"></div>
+
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html" class="pizza"><strong>Home</strong></a></li>
+                    <li><a href="sobrenos.html" class="pizza"><strong>Sobre nós</strong></a></li>
+                    <li><a href="#" class="pizza" data-bs-toggle="modal" data-bs-target="#exampleModal"><strong>Cadastre-se</strong></a></li>
+                    <li><a href="#"><input type="button" value="Entrar" class="gustavao" data-bs-toggle="modal" data-bs-target="#LoginModal"></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const toggleButton = document.querySelector('.toggle-button');
+                const navbarLinks = document.querySelector('.navbar-links');
+
+                toggleButton.addEventListener('click', function () {
+                    navbarLinks.classList.toggle('active');
+                });
+            });
+        </script>
+        <div class="nwa"></div>
+        <br>
+        <br>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card border-0">
+                    <img src="css/img/easteregg-allaison.jpg" alt="...">
+                    <div class="card-body" style="color: white;background-color: rgb(46, 43, 43);">
+                        <h5 class="card-title">Allyson Miguel</h5>
+                        <h6> Banco de dados, design e protótipo </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0">
+                    <img src="css/img/easteregg-giovane.jpg" alt="...">
+                    <div class="card-body" style="color: white;background-color: rgb(46, 43, 43);">
+                        <h5 class="card-title">Giovane Santos</h5>
+                        <h6> Codificação, design</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0">
+                    <img src="css/img/easteregg-evaras.jpg" alt="...">
+                    <div class="card-body" style="color: white;background-color: rgb(46, 43, 43);">
+                        <h5 class="card-title">Kauã André</h5>
+                        <h6> Banco de dados, protótipo, design </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0">
+                    <img src="css/img/easteregg-gustavobuxa.jpg" alt="...">
+                    <div class="card-body" style="color: white;background-color: rgb(46, 43, 43);">
+                        <h5 class="card-title">Gustavo Brito</h5>
+                        <h6> Banco de dados, protótipo</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+        <h1 style="font-family: 'Dosis', sans-serif; color: white;margin-left: 1.2rem;">Quem somos</h1>
+        <p style="font-family: 'Dosis', sans-serif; margin-left: 1.2rem;font-size: 1.2rem; color:white">
+            Afetados por uma substância radioativa, um grupo de tartarugas cresce anormalmente, ganha força e conhecimento. Vivendo nos esgotos de Manhattan, quatro jovens tartarugas, treinadas na arte de kung-fu
+        </p>
+        <br>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <center>
+                        <form action="index.html" class="was-validated">
+                            <div class="card border-0" style="width: 100%; background-color: black;border-radius:40px; border-color: transparent;">
+                                <div class="card-body" style="border-color: transparent;border-radius:40px;">
+                                    <h1 class="card-title" style="color: white; font-family:'Montserrat', sans-serif;">Cadastrar conta</h1>
+                                    <hr style="height:3px; color: white;">
+                                </div>
+                                <ul class="list-group list-group-flush border-0">
+                                    <p class="card-text border-0" style="color: white; margin-left: 1vh;font-family:'Montserrat', sans-serif;">Nome</p>
+                                    <li class="list-group-item border-0" style="background-color:black; margin-left: 1vh;">
+                                        <input type="text" placeholder="" id="uname" class="form-control" name="uname" required>
+                                        <div class="valid-feedback" style="font-family:'Montserrat', sans-serif;">Nome válido</div>
+                                        <div class="invalid-feedback" style="font-family:'Montserrat', sans-serif;">Por favor preencha este campo</div>
+                                    </li>
+                                    <p class="card-text" style="color: white;margin-left: 1vh;font-family:'Montserrat', sans-serif;">E-mail</p>
+                                    <li class="list-group-item border-0" style="background-color:black; margin-left: 1vh;">
+                                        <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" required>
+                                        <div class="invalid-feedback" style="font-family:'Montserrat', sans-serif;">Email inválido</div>
+                                        <div class="valid-feedback" style="font-family:'Montserrat', sans-serif;">Email válido</div>
+                                    </li>
+                                    <p class="card-text" style="color: white; margin-left: 1vh;font-family:'Montserrat', sans-serif;">Senha</p>
+                                    <li class="list-group-item border-0" style="background-color:black; margin-left: 1vh;">
+                                        <input type="password" class="form-control" name="password" id="password" required>
+                                        <div class="valid-feedback" style="font-family:'Montserrat', sans-serif;">Senha válida</div>
+                                        <div class="invalid-feedback" style="font-family:'Montserrat', sans-serif;">Por favor preencha este campo</div>
+                                    </li>
+                                    <p class="card-text" style="color: white;margin-left: 1vh;font-family:'Montserrat', sans-serif;">Gênero</p>
+                                    <li class="list-group-item border-0" style="background-color:black; margin-left: 1vh;">
+                                        <select class="form-select" id="gender" name="gender" required>
+                                            <option value="" disabled selected>Selecione seu gênero</option>
+                                            <option value="male" style="font-family:'Montserrat', sans-serif;">Masculino</option>
+                                            <option value="female" style="font-family:'Montserrat', sans-serif;">Feminino</option>
+                                        </select>
+                                        <div class="invalid-feedback" style="font-family:'Montserrat', sans-serif;">Por favor selecione uma opção</div>
+                                        <div class="valid-feedback" style="font-family:'Montserrat', sans-serif;">Gênero válido</div>
+                                    </li>
+                                    <p class="card-text" style="color: white;margin-left: 1vh;font-family:'Montserrat', sans-serif;">Data de Nascimento</p>
+                                    <li class="list-group-item border-0" style="background-color:black; margin-left: 1vh;">
+                                        <input type="date" class="form-control" id="dob" name="dob" required>
+                                        <div class="invalid-feedback" style="font-family:'Montserrat', sans-serif;">Por favor preencha este campo</div>
+                                        <div class="valid-feedback" style="font-family:'Montserrat', sans-serif;">Data válida</div>
+                                    </li>
+                                    <p class="card-text" style="font-family:'Montserrat', sans-serif;">Já tem uma conta? <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#LoginModal" style="font-family:'Montserrat', sans-serif;">Fazer login</a></p>
+                                </ul>
+                                <div class="card-body">
+                                    <input type="submit" value="Cadastrar" class="btn btn-outline-light" style="font-family: 'Montserrat', sans-serif;">
+                                </div>
+                            </div>
+                        </form>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <center>
+                        <form action="index.html" class="was-validated">
+                            <div class="card border-0" style="width: 100%; background-color: black;border-radius:40px; border-color: transparent;">
+                                <div class="card-body" style="border-color: transparent;border-radius:40px;">
+                                    <h1 class="card-title" style="color: white;font-family:'Montserrat', sans-serif;">Fazer login</h1>
+                                    <hr style="height:3px; color: white;">
+                                </div>
+                                <ul class="list-group list-group-flush border-0">
+                                    <p class="card-text" style="color: white;margin-left: 1vh;font-family:'Montserrat', sans-serif;">E-mail</p>
+                                    <li class="list-group-item border-0" style="background-color:black; margin-left: 1vh;">
+                                        <input type="email" class="form-control" id="login-email" placeholder="nome@exemplo.com" required>
+                                        <div class="invalid-feedback" style="font-family:'Montserrat', sans-serif;">Email inválido</div>
+                                        <div class="valid-feedback" style="font-family:'Montserrat', sans-serif;">Email válido</div>
+                                    </li>
+                                    <p class="card-text" style="color: white; margin-left: 1vh;font-family:'Montserrat', sans-serif;">Senha</p>
+                                    <li class="list-group-item border-0" style="background-color:black; margin-left: 1vh;">
+                                        <input type="password" class="form-control" name="password" id="login-password" required>
+                                        <div class="valid-feedback" style="font-family:'Montserrat', sans-serif;">Senha válida</div>
+                                        <div class="invalid-feedback" style="font-family:'Montserrat', sans-serif;">Por favor preencha este campo</div>
+                                    </li>
+                                    <p class="card-text" style="font-family:'Montserrat', sans-serif;">Não tem uma conta? <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-family:'Montserrat', sans-serif;">Crie uma agora mesmo</a></p>
+                                </ul>
+                                <div class="card-body">
+                                    <input type="submit" value="Login" class="btn btn-outline-light" style="font-family: 'Montserrat', sans-serif;">
+                                </div>
+                            </div>
+                        </form>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer style="background-color: black; font-family: 'Montserrat', sans-serif; bottom: 0;">
+        <center>
+            <h4 style="color: white;">Participantes;</h4>
+            <p style="color: white;">Allyson, Kauã, Giovane, Gustavo</p>
+        </center>
+    </footer>
+</body>
+
+</html>
